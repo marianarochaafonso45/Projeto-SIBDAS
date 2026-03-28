@@ -5,11 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventário Hospital</title>
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/gym125.png" type="image/png">
+    <!--    favicon-->
+    <link rel="shortcut icon" href="assets/images/logotipo.jpg" type="image/png">
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome (local) -->
+    <link rel="stylesheet" href="assets/fontawesome/all.min.css"> 
+    <!-- estilos da página --> 
     <link rel="stylesheet" href="assets/css/estilos.css">
+
 </head>
 <body>
+    <nav class="bng-navbar">
+        <!-- Logo e Nome -->
+        <div>
+            <img src="assets/images/logotipo.jpg" alt="Logo TechHealth">
+            <h3>TechHealth Solutions</h3>
+        </div> 
+        <div class="container-navegacao">
+            <a href="#o-software">O Software</a>
+            <a href="#contacto">Contacto</a>
+        </div> 
+        <div class="nav-cliente">
+            <a href="../back-office/index.html">Acesso Hospital</a>
+        </div> 
+    </nav> 
+
+    <section class="container-texto-generico" id="o-software">
+        <div class="quem-somos-content">
+            <h1>Especialistas em Sistemas de Informação para a Saúde</h1>
+            <p>Desenvolvemos soluções web avançadas para a gestão centralizada do inventário de equipamentos médicos do seu hospital.</p>
+            <p>A nossa plataforma garante a rastreabilidade, gestão documental e controlo de garantias, preparando a sua instituição para o futuro.</p>
+            <a href="#contacto" class="button">Fale Connosco</a>
+        </div>
+    </section> 
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Pretende implementar o nosso sistema no seu hospital? Envie-nos uma mensagem.</p>
+        <form id="contactForm">
+            <label for="nome">Nome / Instituição:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </section> 
+
+    <footer class="footer-container">
+        <div class="footer-section">
+            <p>2026 TechHealth Solutions. Software para a área da Saúde.</p>
+        </div>
+    </footer>
     <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>
