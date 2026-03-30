@@ -5,15 +5,26 @@
  box-sizing: border-box; /* Inclui a borda e o preenchimento no cálculo do tamanho */
  font-family: 'Titillium Web', Arial, Helvetica, sans-serif; /* Define a fonte padrão */
 } 
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* <-- É aqui que ele entra! */
+}
+/* ------------------------------------- */
 /* Estilo da barra de navegação principal */
 .bng-navbar {
  background-color: #15b38e; /* Cor de fundo escura */
  display: flex; /* Coloca os elementos em linha */
  align-items: center; /* Centraliza os itens verticalmente */
  justify-content: space-between; /* Espaço entre os blocos */
- padding: 10px 20px; /* Espaçamento interno da barra */
+ padding: 15px 25px; /* Espaçamento interno da barra */
  position: sticky; /* Fixa a barra no topo ao fazer scroll */
  top: 0; /* A barra fica colada ao topo */
+ width: 100vw; /* Garante que ocupa a largura toda */
+ max-width: 100%; /* Impede que crie scroll horizontal */
+ box-sizing: border-box; /* O padding não aumenta a largura total */
+ z-index: 1000; /* Garante que fica por cima do resto do site ao fazer scroll */
 } 
 /* Estilo para os <div> internos da barra de navegação */
 .bng-navbar div {
@@ -22,31 +33,34 @@
 } 
 /* Estilo do logótipo na barra de navegação */
 .bng-navbar img {
- height: 50px; /* Define a altura do logótipo */
- margin-right: 10px; /* Espaço entre o logótipo e o texto */
+ height: 40px; /* Define a altura do logótipo */
+ margin-right: 8px; /* Espaço entre o logótipo e o texto */
 } 
 /* Estilo do texto com o nome do inventário */
 .bng-navbar h3 {
- font-size: 1.5em; /* Aumenta o tamanho da letra */
+ font-size: 1.3em; /* Aumenta o tamanho da letra */
  color: #dddddd; /* Cor do texto em cinza claro */
 } 
 /* Estilos para os links centrais da navegação */
 .container-navegacao {
- text-align: center; /* Centraliza os links */
+ display: flex;
+ justify-content: center;
+ align-items: center;; /* Centraliza os links */
  padding: 20px; /* Adiciona espaçamento interno */
 } 
 .container-navegacao a {
- font-size: 1.5em; /* Aumenta o tamanho da fonte dos links */
- margin: 0px 50px; /* Espaçamento horizontal entre os links */
+ font-size: 1em; /* Aumenta o tamanho da fonte dos links */
+ margin: 0px 1vw; /* Espaçamento horizontal entre os links */
  text-decoration: none; /* Remove o sublinhado */
  color: #dddddd; /* Define a cor dos links */
+ white-space: nowrap; /* Garante que a palavra "Equipamentos" não é cortada */
 }
 .container-navegacao a:hover {
  color: #ffffff; /* Muda a cor ao passar o mouse */
 }
 .container-navegacao a {
- font-size: 1.5em; /* Aumenta o tamanho da fonte dos links */
- margin: 0px 50px; /* Espaçamento horizontal entre os links */
+ font-size: 1.2em; /* Aumenta o tamanho da fonte dos links */
+ margin: 0px 20px; /* Espaçamento horizontal entre os links */
  text-decoration: none; /* Remove o sublinhado */
  color: #dddddd; /* Define a cor dos links */
 }
@@ -57,8 +71,8 @@
 .nav-cliente a {
  color: #dddddd; /* Cor do texto */
  text-decoration: none; /* Remove sublinhado */
- font-size: 1.5em; /* Tamanho da fonte */
- padding: 10px; /* Espaçamento interno */
+ font-size: 1rem; /* Tamanho da fonte */
+ padding: 8px 15px; /* Espaçamento interno */
  border-radius: 5px; /* Bordas arredondadas */
  transition: background 0.3s;/* Efeito suave na transição */
 } 
@@ -70,11 +84,26 @@
  display: flex; /* Ativa o layout flexível */
  background-color: #109c70; /* Cor de fundo escura */
  color: white; /* Cor do texto */
- padding: 40px 20px; /* Espaçamento interno do rodapé */
+ padding: 30px 20px; /* Espaçamento interno do rodapé */
  flex-wrap: wrap; /* Permite que os itens se ajustem em ecrãs pequenos */
  position: relative; /* Fixa o rodapé no fundo da página */
  bottom: 0; /* Alinha o rodapé à parte inferior */
- left: 0; /* Alinha o rodapé à esquerda */
+ text-align: center;/* Alinha o rodapé ao centro */
  width: 100%; /* Faz o rodapé ocupar toda a largura da página */
  margin-top: auto; /* Empurra para o fundo */
+}
+.footer-section {
+    flex: 1 1 250px; /* Cada coluna ocupa espaço igual */
+    margin: 10px 20px;}
+
+/* Títulos do Rodapé  */
+.footer-section strong {
+    display: block;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    text-transform: uppercase; /* Fica tudo em maiúsculas */
+}
+.footer-section p { 
+    margin: 8px 0;
+    font-size: 1.1em;
 }
