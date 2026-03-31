@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +11,16 @@
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome (local) -->
-    <link rel="stylesheet" href="assets/fontawesome/all.min.css"> 
-    <!-- estilos da página --> 
+    <link rel="stylesheet" href="assets/fontawesome/all.min.css">
+    <!-- estilos da página -->
     <link rel="stylesheet" href="assets/css/estilos.css">
 
 </head>
+
 <body>
     <nav class="bng-navbar">
         <!-- Logo e Nome -->
@@ -24,8 +28,8 @@
             <img src="assets/images/logotipo.jpg" alt="Logo TechHealth">
             <h3>TechHealth Solutions</h3>
         </div>
-        
-        
+
+
         <!-- Seção "Conteudo da pagina" -->
         <div class="container-navegacao">
             <a href="#equipamentos">Equipamentos</a>
@@ -39,42 +43,71 @@
 
         <div class="nav-cliente">
             <a href="../back-office/index.html">Acesso Hospital</a>
-        </div> 
-    </nav> 
+        </div>
+    </nav>
 
-    <section class="container-texto-generico" id="equipamentos">
-        <div class="equipamentos">
-            <h1>Gestão do Inventário Hospitalar</h1>
-            <p>Substitua folhas de Excel dispersas por uma aplicação web centralizada para gerir o ciclo de vida dos seus
-                equipamentos médicos.</p>
-            <img src="assets/images/dashboard_hospitalar.jpg" alt="Dashboard do Sistema Hospitalar">
-            <a href="#contacto" class="button">Solicitar Demonstração</a>
+    <section id="equipamentos" class="seccao-principal">
+        <div class="container-principal">
+            
+            <div class="bloco-apresentacao">
+                <div class="apresentacao-texto">
+                    <h1>Gestão Centralizada de Equipamentos Médicos</h1>
+                    <p>Evolua a gestão do seu hospital. Substitua as folhas de Excel por uma plataforma centralizada e crie a infraestrutura perfeita para o futuro da manutenção hospitalar.</p>
+                    <a href="#contacto" class="button">Solicitar Demonstração</a>
+                </div>
+                <div class="apresentacao-imagem">
+                    <img src="assets/images/equipamentos-medicos-hospitalares.jpg" alt="Sistema Hospitalar">
+                </div>
+            </div>
+
+            <div class="bloco-destaques">
+                <div class="destaque-item">
+                    <i class="fa-solid fa-location-crosshairs fa-3x mb-3" style="color: #15b38e;"></i>
+                    <h4>Localização Imediata</h4>
+                    <p>Resolva a dificuldade em localizar equipamentos críticos associando cada dispositivo ao seu serviço exato.</p>
+                </div>
+                <div class="destaque-item">
+                    <i class="fa-solid fa-clock-rotate-left fa-3x mb-3" style="color: #15b38e;"></i>
+                    <h4>Histórico Estruturado</h4>
+                    <p>Acabe com a inconsistência de dados. Mantenha um registo único para apoiar as decisões técnicas e administrativas.</p>
+                </div>
+                <div class="destaque-item">
+                    <i class="fa-solid fa-clipboard-check fa-3x mb-3" style="color: #15b38e;"></i>
+                    <h4>Pronto para Auditorias</h4>
+                    <p>Centralize a informação técnica e elimine a fragilidade documental perante processos de certificação da qualidade.</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
-     <!-- Seção "Conteudo da pagina - Localização" -->
+    <!-- Seção "Conteudo da pagina - Localização" -->
     <section id="localizacoes" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-4">Localizações Hospitalares</h2>
-            <p class="text-center mb-5">Estruture o mapa da sua instituição para saber sempre onde está cada equipamento.</p>
-            
+            <p class="text-center mb-5">Estruture o mapa da sua instituição para saber sempre onde está cada
+                equipamento.</p>
+
             <div class="row text-center">
                 <div class="col-md-4 mb-4">
                     <i class="fa-regular fa-building fa-3x mb-3" style="color: #15b38e;"></i>
                     <h4>Edifício e Piso</h4>
-                    <p>Organize o seu parque tecnológico mapeando os vários edifícios da instituição e os seus respetivos pisos.</p>
+                    <p>Organize o seu parque tecnológico mapeando os vários edifícios da instituição e os seus
+                        respetivos pisos.</p>
                 </div>
-                
+
                 <div class="col-md-4 mb-4">
                     <i class="fa-solid fa-bed-pulse fa-3x mb-3" style="color: #15b38e;"></i>
                     <h4>Serviço / Departamento</h4>
-                    <p>Aloque os equipamentos diretamente aos serviços clínicos, como Urgência, Medicina ou Cuidados Intensivos.</p>
+                    <p>Aloque os equipamentos diretamente aos serviços clínicos, como Urgência, Medicina ou Cuidados
+                        Intensivos.</p>
                 </div>
-                
+
                 <div class="col-md-4 mb-4">
                     <i class="fa-solid fa-door-open fa-3x mb-3" style="color: #15b38e;"></i>
                     <h4>Sala / Gabinete</h4>
-                    <p>Garanta a rastreabilidade exata registando a sala específica onde o dispositivo médico se encontra.</p>
+                    <p>Garanta a rastreabilidade exata registando a sala específica onde o dispositivo médico se
+                        encontra.</p>
                 </div>
             </div>
         </div>
@@ -83,25 +116,29 @@
     <section id="fornecedores" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Gestão de Fornecedores</h2>
-            <p class="text-center mb-5">Centralize as entidades parceiras e associe-as rapidamente aos seus equipamentos.</p>
-            
+            <p class="text-center mb-5">Centralize as entidades parceiras e associe-as rapidamente aos seus
+                equipamentos.</p>
+
             <div class="row text-center">
                 <div class="col-md-4 mb-4">
                     <i class="fa-solid fa-industry fa-3x mb-3" style="color: #15b38e;"></i>
                     <h4>Fabricantes</h4>
-                    <p>Mantenha um registo organizado das marcas e dos fabricantes originais dos seus dispositivos médicos.</p>
+                    <p>Mantenha um registo organizado das marcas e dos fabricantes originais dos seus dispositivos
+                        médicos.</p>
                 </div>
-                
+
                 <div class="col-md-4 mb-4">
                     <i class="fa-solid fa-truck-medical fa-3x mb-3" style="color: #15b38e;"></i>
                     <h4>Distribuidores</h4>
-                    <p>Controle a informação dos fornecedores comerciais e distribuidores que venderam o equipamento ao hospital.</p>
+                    <p>Controle a informação dos fornecedores comerciais e distribuidores que venderam o equipamento ao
+                        hospital.</p>
                 </div>
-                
+
                 <div class="col-md-4 mb-4">
                     <i class="fa-solid fa-screwdriver-wrench fa-3x mb-3" style="color: #15b38e;"></i>
                     <h4>Assistência Técnica</h4>
-                    <p>Aceda instantaneamente aos contactos das empresas responsáveis pela manutenção preventiva e corretiva.</p>
+                    <p>Aceda instantaneamente aos contactos das empresas responsáveis pela manutenção preventiva e
+                        corretiva.</p>
                 </div>
             </div>
         </div>
@@ -110,25 +147,29 @@
     <section id="documentacao" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-4">Documentação Técnica</h2>
-            <p class="text-center mb-5">Centralize e aceda rapidamente a toda a documentação vital do seu parque tecnológico.</p>
-            
+            <p class="text-center mb-5">Centralize e aceda rapidamente a toda a documentação vital do seu parque
+                tecnológico.</p>
+
             <div class="row text-center">
                 <div class="col-md-4 mb-4">
                     <i class="fa-solid fa-book-medical fa-3x mb-3" style="color: #15b38e;"></i>
                     <h4>Manuais e Guias</h4>
-                    <p>Acesso digital e imediato a manuais de utilizador e manuais de serviço para apoiar as equipas clínicas e técnicas.</p>
+                    <p>Acesso digital e imediato a manuais de utilizador e manuais de serviço para apoiar as equipas
+                        clínicas e técnicas.</p>
                 </div>
-                
+
                 <div class="col-md-4 mb-4">
                     <i class="fa-solid fa-certificate fa-3x mb-3" style="color: #15b38e;"></i>
                     <h4>Certificados de Calibração</h4>
-                    <p>Mantenha os certificados de calibração e declarações de conformidade organizados e sempre prontos para auditorias da qualidade.</p>
+                    <p>Mantenha os certificados de calibração e declarações de conformidade organizados e sempre prontos
+                        para auditorias da qualidade.</p>
                 </div>
-                
+
                 <div class="col-md-4 mb-4">
                     <i class="fa-solid fa-file-invoice fa-3x mb-3" style="color: #15b38e;"></i>
                     <h4>Faturas e Relatórios</h4>
-                    <p>Arquive faturas de aquisição e relatórios técnicos, associando cada documento diretamente ao equipamento ou fornecedor.</p>
+                    <p>Arquive faturas de aquisição e relatórios técnicos, associando cada documento diretamente ao
+                        equipamento ou fornecedor.</p>
                 </div>
             </div>
         </div>
@@ -137,48 +178,80 @@
     <section id="garantias" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Garantias e Contratos</h2>
-            <p class="text-center mb-5">Controle rigorosamente os prazos e garanta que os seus dispositivos médicos estão sempre protegidos.</p>
-            
+            <p class="text-center mb-5">Controle rigorosamente os prazos e garanta que os seus dispositivos médicos
+                estão sempre protegidos.</p>
+
             <div class="row text-center">
                 <div class="col-md-4 mb-4">
                     <i class="fa-solid fa-shield-halved fa-3x mb-3" style="color: #15b38e;"></i>
                     <h4>Gestão de Garantias</h4>
-                    <p>Monitorize as datas de início e fim das garantias dos equipamentos, evitando custos desnecessários com reparações cobertas.</p>
+                    <p>Monitorize as datas de início e fim das garantias dos equipamentos, evitando custos
+                        desnecessários com reparações cobertas.</p>
                 </div>
-                
+
                 <div class="col-md-4 mb-4">
                     <i class="fa-solid fa-file-signature fa-3x mb-3" style="color: #15b38e;"></i>
                     <h4>Contratos de Manutenção</h4>
-                    <p>Faça a gestão dos contratos de manutenção, identificando facilmente o tipo de contrato, a entidade responsável e a periodicidade.</p>
+                    <p>Faça a gestão dos contratos de manutenção, identificando facilmente o tipo de contrato, a
+                        entidade responsável e a periodicidade.</p>
                 </div>
-                
+
                 <div class="col-md-4 mb-4">
                     <i class="fa-regular fa-calendar-check fa-3x mb-3" style="color: #15b38e;"></i>
                     <h4>Validades e Prazos</h4>
-                    <p>Consulte rapidamente as datas relevantes de cada dispositivo para um planeamento eficaz do ciclo de vida tecnológico.</p>
+                    <p>Consulte rapidamente as datas relevantes de cada dispositivo para um planeamento eficaz do ciclo
+                        de vida tecnológico.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Pretende implementar o nosso sistema no seu hospital? Envie-nos uma mensagem.</p>
-        <form id="contactForm">
-            <label for="nome">Nome / Instituição:</label>
-            <input type="text" id="nome" name="nome" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <button type="submit">Enviar</button>
-        </form>
-    </section> 
+    <section id="contacto" class="seccao-contacto">
+        <div class="contacto-container">
+
+            <div class="contacto-cabecalho">
+                <h2>Fale Connosco</h2>
+                <p>Pretende implementar o nosso sistema na sua instituição de saúde? Envie-nos uma mensagem e a nossa
+                    equipa
+                    agendará uma demonstração.</p>
+            </div>
+
+            <div class="contacto-cartao">
+                <form id="contactForm" class="formulario-contacto">
+
+                    <div class="form-grupo-duplo">
+                        <div class="form-campo">
+                            <label for="nome">Nome / Instituição <span>*</span></label>
+                            <input type="text" id="nome" name="nome" placeholder="Ex: Hospital São João" required>
+                        </div>
+                        <div class="form-campo">
+                            <label for="email">Email Profissional <span>*</span></label>
+                            <input type="email" id="email" name="email" placeholder="email@hospital.pt" required>
+                        </div>
+                    </div>
+
+                    <div class="form-campo">
+                        <label for="mensagem">Mensagem <span>*</span></label>
+                        <textarea id="mensagem" name="mensagem" rows="4"
+                            placeholder="Como podemos ajudar a gerir o ciclo de vida dos seus equipamentos?"
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
 
     <footer class="footer-container">
         <div class="footer-section">
             <strong>TechHealth Solutions</strong>
-            <p>Especialistas em Sistemas de Informação para a Saúde. Desenvolvemos soluções web avançadas para a gestão centralizada e rastreabilidade do inventário hospitalar.</p>
+            <p>Especialistas em Sistemas de Informação para a Saúde. Desenvolvemos soluções web avançadas para a gestão
+                centralizada e rastreabilidade do inventário hospitalar.</p>
         </div>
-        
+
         <div class="footer-section">
             <strong>Contactos</strong>
             <p>Email: comercial@techhealth.pt</p>
@@ -192,4 +265,5 @@
     </footer>
     <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
