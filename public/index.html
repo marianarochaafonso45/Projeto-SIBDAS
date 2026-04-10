@@ -7,17 +7,18 @@
     <title>Inventário Hospital</title>
     <!-- favicon -->
     <!--    favicon-->
-    <link rel="shortcut icon" href="assets/img/logotipo.jpg" type="image/png">
-    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="shortcut icon" href="../assets/img/logotipo.jpg" type="image/png">
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
     <!-- Font Awesome (local) -->
-    <link rel="stylesheet" href="assets/fontawesome/all.min.css">
+    <link rel="stylesheet" href="../assets/fontawesome/all.min.css">
     <!-- estilos da página -->
-    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="../assets/css/1241152.css">
+    
 
 </head>
 
@@ -25,7 +26,7 @@
     <nav class="bng-navbar">
         <!-- Logo e Nome -->
         <div>
-            <img src="assets/images/logotipo.jpg" alt="Logo TechHealth">
+            <img src="../assets/img/logotipo.jpg" alt="Logo TechHealth">
             <h3>TechHealth Solutions</h3>
         </div>
 
@@ -42,7 +43,7 @@
         </div>
 
         <div class="nav-cliente">
-            <a href="../back-office/index.html">Acesso Hospital</a>
+            <a href="../private/index.html">Acesso Hospital</a>
         </div>
     </nav>
 
@@ -56,7 +57,7 @@
                     <a href="#contacto" class="button">Solicitar Demonstração</a>
                 </div>
                 <div class="apresentacao-imagem">
-                    <img src="assets/images/equipamentos-medicos-hospitalares.jpg" alt="Sistema Hospitalar">
+                    <img src="../assets/img/equipamentos-medicos-hospitalares.jpg" alt="Sistema Hospitalar">
                 </div>
             </div>
 
@@ -205,6 +206,53 @@
             </div>
         </div>
     </section>
+    <section id="faq" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Perguntas Frequentes</h2>
+            <p class="text-center mb-5">Esclareça as suas dúvidas sobre a implementação do nosso sistema CMMS (Computerized Maintenance Management System).</p>
+<!--um CMMS é um software inteligente que as empresas (neste caso, os hospitais) usam para gerir tudo o que diz respeito à "saúde" e ao ciclo de vida das suas próprias máquinas e equipamentos.-->
+            <div class="accordion" id="accordionFaq">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <strong>A plataforma é compatível com os equipamentos de todas as marcas?</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFaq">
+                        <div class="accordion-body">
+                            Sim. A nossa plataforma é agnóstica e permite registar dispositivos de qualquer fabricante (Philips, Dräger, B. Braun, etc.), uniformizando os dados de todo o inventário hospitalar num único formato estruturado.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <strong>Quanto tempo demora a transição das folhas Excel para a plataforma?</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFaq">
+                        <div class="accordion-body">
+                            Depende da dimensão do parque tecnológico. Para um hospital de média dimensão com cerca de 1500 equipamentos, o processo de migração de dados e parametrização do sistema demora normalmente entre 2 a 4 semanas.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <strong>É possível arquivar documentos pesados como Manuais de Serviço?</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFaq">
+                        <div class="accordion-body">
+                            Absolutamente. O módulo de documentação técnica suporta o arquivo de Manuais de Utilizador, Certificados de Calibração e Faturas, associando-os diretamente à ficha de cada equipamento para consulta rápida em caso de auditoria.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="contacto" class="seccao-contacto">
         <div class="contacto-container">
@@ -263,7 +311,7 @@
             <p>2026 TechHealth Solutions. Software para a área da Saúde.</p>
         </div>
     </footer>
-    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

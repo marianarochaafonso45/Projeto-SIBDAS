@@ -138,6 +138,25 @@ body {
 
 .button:hover { background: #0b7554; }
 
+/* --- ESTILO DO ACCORDION - utilizacao do bootstrap (Regra 3.1.10) --- */
+.accordion-button:not(.collapsed) {
+    background-color: #e8f7f4; /* Um verde muito clarinho quando aberto */
+    color: #109c70;            /* Texto verde escuro */
+    box-shadow: none;          /* Remove a sombra azul padrão do Bootstrap */
+}
+
+.accordion-button:focus {
+    border-color: #15b38e;
+    box-shadow: 0 0 0 0.25rem rgba(21, 179, 142, 0.25); /* Glow verde ao clicar */
+}
+
+.accordion-item {
+    border: 1px solid #f0f0f0;
+    margin-bottom: 10px;
+    border-radius: 8px !important; /* Cantos arredondados nos itens */
+    overflow: hidden;
+}
+
 /* --- SECÇÃO DE CONTACTO--- */
 .seccao-contacto { background: #f8f9fa; padding: 50px 20px; text-align: center; }
 .contacto-container { max-width: 700px; margin: 0 auto; }
